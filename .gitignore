@@ -1,17 +1,7 @@
-# Virtual environment
-env/
-venv/
-
-# Django settings
 *.pyc
 __pycache__/
+venv/
+.venv/
 db.sqlite3
-
-# Logs and local data
-logs/
-*.log
-media/
-staticfiles/
-
-# Environment variables
+/staticfiles/
 .env
