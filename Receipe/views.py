@@ -7,6 +7,11 @@ from .serializers import CategorySerializer, SubCategorySerializer, ReceipeSeria
 # Swagger imports
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
+from django.http import JsonResponse
+
+def home(request):
+    return JsonResponse({'message': 'Hello from API'})
+
 
 # -------------------
 # Category Views

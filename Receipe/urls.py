@@ -3,6 +3,8 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
+
+     path('', views.home, name='home'),
     # Category URLs
     path('categories/', views.category_list, name='category-list'),  # GET, POST
     path('categories/<int:pk>/', views.category_detail, name='category-detail'),  # GET, PUT, PATCH, DELETE
